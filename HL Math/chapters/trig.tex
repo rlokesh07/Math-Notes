@@ -1,6 +1,6 @@
 \documentclass[../main.tex]{subfiles}
 
-
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -32,7 +32,39 @@ In order for these arc functions to be functions, they have a range restriction.
 
 \section{Compound Angle Identities}
 
+\subsection{Compound Identities}
 
+\[ \sin(A \pm B) = \sin(A) \cos(B) \pm \cos(A) \sin(B) \]
+\[ \cos(A \pm B) = \cos(A) \cos(B) \mp \sin(A) \sin(B) \]
+
+\[ \tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan(A) \tan(B)} \]
+
+
+\subsection{Cofunction Identities}
+
+\[ \sin(\frac{\pi}{2} - x) = \cos x \]
+\[ \cos(\frac{\pi}{2} - x) = \sin x \]
+\[ \csc(\frac{\pi}{2} - x) = \sec x \]
+\[ \sec(\frac{\pi}{2} - x) = \csc x \]
+\[ \tan(\frac{\pi}{2} - x) = \cot x \]
+\[ \cot(\frac{\pi}{2} - x) = \tan x \]
+
+
+\subsection{Examples}
+
+Let $f(x) = \tan(x + \pi) \cos(x - \frac{\pi}{2}) where $0 < x < \frac{pi}{2}$. Express $f(x)$ in terms of $\sin x$ and $\cos x$
+
+\begin{align*}
+
+    f(x) &= \tan(x + \pi) \cos(x - \frac{\pi}{2}) \\
+
+         &= \tan(x) \cos(x - \frac{\pi}{2}) \\
+
+         &= \tan(x) \sin(x) \\
+
+         &= \frac{\sin^2 x}{\cos x}
+
+\end{align*}
 
 
 \end{document}
