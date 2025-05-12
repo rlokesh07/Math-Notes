@@ -13,4 +13,63 @@
 If a limit gives you a indeterminate form, ie. $\frac{\inf}{\inf}$ or $\frac{0}{0}$, you can use the derivatve of the numerator and denominator to try to find the limit.
 
 \[ \lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)} \]
+
+\subsection{Seperable Differential Equations}
+
+A seperable differential equation is any equation that can be written in the form $y' = f(x)g(x)$. This means that you can seperate the RHS into two seperate functions.
+
+First, check for values of y that make g(y) = 0, these lead to constant solutions. Then, you rewrite the euqation to the form of
+
+
+\[ \frac{dy}{g(y)} = f(x)dx \]
+
+and you integrate both sides. Because both sides have c, there is only one. Solve the equation for y and if there is an intial condition sub in the value and solve for c.
+
+\subsection{Homogeneous Differential Equations}
+
+\[ 2x dy = (x+y)dx \]
+
+Notice how all the terms have the same order. Sub in $y$ as $vx$. That means that $dy = xdv + vdx$ through the power rule.
+
+
+\[ 2x(xdv + vdx) = (x+ vx)dx \]
+
+You can factor out an x on the right side
+
+
+\[ 2x(xdv + vdx) = x(1 + v)dx \]
+
+Cancel out the x on both sides
+
+\[ 2(xdv + vdx) = (1 + v)dx \]
+
+
+\[ 2xdv + 2vdx = (1 + v)dx \]
+
+Then, consolidating the vdx on both sides
+
+\[ 2xdv + vdx = dx \]
+
+Then, movign the vdx to the other side and factoring out dx again
+
+
+\[ 2xdv= dx - vdx \]
+
+\[ 2xdv= dx(1 - v) \]
+
+Now, isolating x and v, we move some terms around
+
+
+\[ \frac{dv}{(1-v)} = \frac{dx}{2x} \]
+
+We can finally integrate both sides
+
+
+\[ \int{\frac{dv}{(1-v)}} = \int{\frac{dx}{2x}} \]
+
+\[ -ln(1-v) = 0.5 ln(x) + c \]
+
+You can use log rules and stuff to go beyond that, but when it is time you can sub v back out for $\frac{y}{x}$ 
+
+
 \end{document}
