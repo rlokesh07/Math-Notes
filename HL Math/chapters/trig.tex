@@ -49,28 +49,29 @@ In order for these arc functions to be functions, they have a range restriction.
 \[ \tan(\frac{\pi}{2} - x) = \cot x \]
 \[ \cot(\frac{\pi}{2} - x) = \tan x \]
 
+\subsection{Example}
 
-\subsection{Examples}
-
-Let $f(x) = \tan(x + \pi) \cos(x - \frac{\pi}{2}) where $0 < x < \frac{pi}{2}$. Express $f(x)$ in terms of $\sin x$ and $\cos x$
+Let $f(x) = \tan(x + \pi) \cos\left(x - \frac{\pi}{2}\right)$ where $0 < x < \frac{\pi}{2}$. Express $f(x)$ in terms of $\sin x$ and $\cos x$.
 
 \begin{align*}
-
-    f(x) &= \tan(x + \pi) \cos(x - \frac{\pi}{2}) \\
-
-         &= \tan(x) \cos(x - \frac{\pi}{2}) \\
-
-         &= \tan(x) \sin(x) \\
-
+    f(x) &= \tan(x + \pi) \cos\left(x - \frac{\pi}{2}\right) \\
+         &= \tan x \cdot \sin x \quad \text{(since $\tan(x + \pi) = \tan x$, and $\cos(x - \frac{\pi}{2}) = \sin x$)} \\
          &= \frac{\sin^2 x}{\cos x}
-
 \end{align*}
-\begin{table}[]
-\begin{tabular}{lllll}
-General Function        & a                     & b                         & c                                        & d                                        \\
-$y = a \sin b(x-c) + d$ & Amplitude = $\abs{a}$ & period = $\frac{2\pi}{b}$ & c value represents movement to the right & d moves the graph up and down            \\
-$y = a \tan b(x-c) + d$ & vertical stretch      & period = $\frac{\pi}{b}$  & c value represents movement to the right & c value represents movement to the right \\
-                        &                       &                           &                                          &                                         
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Function & $a$ (Amplitude) & $b$ (Period) & $c$ Shift & $d$ Shift \\
+\hline
+$y = a \sin b(x - c) + d$ & $|a|$ & $\frac{2\pi}{b}$ & Right if $c > 0$ & Up if $d > 0$ \\
+\hline
+$y = a \tan b(x - c) + d$ & Stretch by $a$ & $\frac{\pi}{b}$ & Right if $c > 0$ & Up if $d > 0$ \\
+\hline
 \end{tabular}
+\caption{Transformations of sine and tangent functions}
 \end{table}
+
+
 \end{document}

@@ -1,7 +1,7 @@
 \documentclass[../main.tex]{subfiles}
 
 \usepackage{amsmath}
-
+\usepackage{xcolor}
 \begin{document}
 
 
@@ -71,5 +71,127 @@ We can finally integrate both sides
 
 You can use log rules and stuff to go beyond that, but when it is time you can sub v back out for $\frac{y}{x}$ 
 
+
+\subsection{Paper 3 Questions}
+
+\subsubsection{May 22 Q1}
+
+This question asks you to explore properties of a family of curves of the type $y^2 = x^3 + ax + b$ for various values of a and b
+
+\begin{enumerate}
+
+    \item On the same set of axes, sketch the following curves for $ -2 \leq x \leq 2$ and $-2 \leq y \leq 2$, clearly indicating any points of intersection with the coordinate axes.
+    \begin{enumerate}
+        \item $y^2 = x^3, x \geq 0$ \\
+            \\
+            
+            The move here is to graph out $y = \sqrt{x^3}$, then have it symmetric over the x axis because including a square root makes it plus or minus
+            \\
+        \item $y^2 = x^3 +1, x \geq -1$  \\
+           \\ 
+            The move is the same here
+            \\
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}
+
+        \item Write down the coordinates for two points of inflection on the curve $y^3 = x^3 +1$ \\ 
+            \\ 
+            This is a write down question, so it cannot be taking the derivitive. Instead, you can clearly tell from the graph that is switches at (0, 1) and (0, -1)
+            \\
+        \item By considering each curve from part(a), identify two key features which would differentiate the graph.
+            \\ 
+            \\ 
+            Given that it asked us for points of inflection, we can talk about how they are different. You could also reference the shart point, the domain, the x and y intercepts
+            \\ 
+    \end{enumerate}
+    Now consider curves in the form $y^2 = x^3 + b$ where $x \geq -\sqrt[3]{b}$
+    \item By varying the value of b, suggest two key features common to these curves \\
+        
+    There is a huge list of things you can say here. The easiest is their limits are the same, they have the same number of intercepts and points of inflection, and there is no sharp point
+    
+    Now consider the curve, $y^2 = x^3 +x$, for $x \geq 0$
+    
+    \item
+        \begin{enumerate}
+            \item Show that $\frac{dy}{dx} = \pm \frac{3x^2 + 1}{2\sqrt{x^3 + x}}$
+
+
+                \[ (y^2)' = (x^3 + x)' \]
+                \[ 2y \frac{dy}{dx} = 3x^2 + 1 \]
+                \[\frac{dy}{dx} = \frac{3x^2 + 1}{2y} \]
+
+                We can solve for y as
+
+                \[ y = \pm \sqrt{x^3 + x} \] 
+                And plug it in 
+                \[\frac{dy}{dx} = \pm \frac{3x^2 + 1}{\sqrt{x^3 + x}} \]
+
+            \item Hence deduce that the curve has no local minimum or maximum points
+
+            \[\frac{dy}{dx} = 0 = \pm \frac{3x^2 + 1}{\sqrt{x^3 + x}} \]
+
+            \[ 0 = 3x^2 + 1 \]
+            \[-\frac{1}{3} = x^2 \] 
+
+            And $x^2$ cannot be negative
+        \end{enumerate}
+    \item The curve $y^2 = x^3 + x$ has two points of inflexion. Due to the symmetry of the curve these points have the same x-coordinate. Find the value of the coordinate in the form $x=\sqrt{\frac{p\sqrt{3} + q}{r}}$
+        
+        \[\frac{dy}{dx} = \pm \frac{3x^2 + 1}{\sqrt{x^3 + x}} \]
+        \[\frac{d^2y}{dx^2} = (\pm \frac{3x^2 + 1}{\sqrt{x^3 + x}})' \]
+        \[\frac{d^2y}{dx^2} = \pm \frac{(\sqrt{x^3 + x})(3x^2 + 1)' + (\sqrt{x^3 + x})'(3x^2 + 1)}{x^3 + x}\]
+        \[\frac{d^2y}{dx^2} = \pm \frac{(\sqrt{x^3 + x})(6x) + 0.5((x^3 + x)^{-1/2} (3x^2 + 1))(3x^2 + 1)}{x^3 + x}\]
+        \[0 = \pm (\sqrt{x^3 + x})(6x) + 0.5((x^3 + x)^{-1/2} (3x^2 + 1))(3x^2 + 1)\]
+        \[(\sqrt{x^3 + x})(6x) =  0.5(x^3 + x)^{-1/2} (3x^2 + 1)(3x^2 + 1) \]
+        \[ (x^3 + x)(6x) = 0.5(3x^2 + 1)^2 \] 
+        \[ 6x^4 + 6x^2 = 0.5(9x^4 + 6x^2 + 1) \]
+        \[ 1.5x^4 +3x^2 - 0.5 = 0 \]
+        Then, recognize how you can turn this into a quadratic using u substitution of $x^2$
+        \[ 3u^2 + 6u -1 = 0 \]
+
+        \[ u = \frac{-6 \pm \sqrt{6^3 - 4 * 3 * -3}}{6} \]
+        \[ u = \frac{-6 \pm \sqrt{48}}{6} \]
+        \[ x^2 = \frac{-6 \pm \sqrt{48}}{6} \]
+        \[ x = \sqrt{ \frac{-6 \pm 4\sqrt{3}}{6}} \]
+        Bing bong badabang thats the answer
+
+    \item P(x, y) is defined to be a rational point if $x$ and $y$ are rational numbers.
+
+        The tangent to the curve $y^2 = x^3 +2$, for $x \geq -\sqrt[3]{2}$. The rational point P(-1, -1) Lies on C.
+
+        \begin{enumerate}
+            \item Find the equation of the tangent to C at P\\
+
+
+                You can quickly implicitly differentiate to find the equation.
+                \[ 2y y' = 3x^2 \]
+                And the slope is $-\frac{3}{2}$
+
+                Then plug into the point slope for to get
+
+                \[ y + 1 = -\frac{3}{2}(x+1) \]
+
+
+        \item Hence, find the coordinate of the rational point Q where this tangent intersects C, expressing each coordinate as a fraction.
+                \\ 
+                \\
+                Reorder the tangent equation in terms of y.
+
+                \[ y = -\frac{3}{2}x - \frac{1}{2} \]
+
+                Then plug into the calculator, using the math to frac function to get $\frac{17}{4}$ and $-\frac{71}{8}$ \\
+
+
+        \end{enumerate}
+
+
+\item The point S(-1, 1) also lies on C. The line [QS] intersects C at a further point. Determine the coordinates of the point. \\ 
+
+    First find the equation of QS by finding the slope as -1.88 then plugging that into point slope form. Then solve simultaneously against C
+
+
+\end{enumerate}
 
 \end{document}
