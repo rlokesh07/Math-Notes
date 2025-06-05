@@ -1,0 +1,119 @@
+\documentclass[../main.tex]{subfiles}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+
+\section{Function}
+
+\subsection{Paper 3 Questions}
+
+\subsubsection{Nov 22 Q1}
+
+
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\roman{enumii})}
+
+j
+\begin{enumerate}
+    \item 
+    \[ \sum^n_{i=1} i^1  = 1 + 2 + 3 ... +n \]
+    \[ \sum^n_{i=1} i^1 = \frac{n}{2}(u_1 + u_n) \]
+    \[ \sum^n_{i=1} i = \frac{1}{2} n (1 + n) \]
+
+    \item
+        \begin{enumerate}
+            \item
+                14
+
+            \item 
+                \[ 1 = a_1 + a_2 + a_3 \]
+                \[ 5 = 2a_1 + 4a_2 + 8a_3 \]
+                \[ 14 = 3a_1 + 9a_2 + 27a_3 \]
+            \item
+                Use your graphing calculator with rref or the polynomial solver to get
+
+                \[ a_1 = \frac{1}{6} \]
+                \[ a_2 = \frac{1}{2} \]
+                \[ a_3 = \frac{1}{3} \]
+
+        \end{enumerate}
+    \item
+    \[ f'(x) = 0 + 1 + 2x + 3x^2 ... nx^{n-1} \]
+        \[ xf'(x) = 0x + x + 2x^2 + 3x^3 ... nx^n \]
+        \[ xf'(x) = x + 2x^2 + 3x^3 ... nx^n \]
+    \item
+        \begin{enumerate}
+            \item
+
+                \[ f_2(x) = xf_1'(x) \]
+                \[ f_2(x) = x(1 + 4x + 9x^2 ... + n^2 x^{n-1} \]
+                \[ f_2(x) = x + 2^2 x^2 + 3^3 x^3 ... + n^2 x^n \]
+            \item
+                Assume q = 1
+
+                \[ \sum_{i=1}^n i^1 x^i = x + 2 x^2 + ... + n x^n \]
+
+                Assume that $\sum_{i=1}^n i^q x^i = f_q(x)$ is true
+
+                q = k+1
+                \[ f_{k+1}(x) = \sum_{i=1}^{n} i^{k+1} x^i \]
+
+                \[ f_{k+1}(x) = x f_k'(x) \]
+
+
+                \[ x f_k'(x) = x(\sum_{i=1}^n i^k x^i)' \]
+
+
+                \[ x f_k'(x) = x\sum_{i=1}^n i^{k} ix^{i-1}) \]
+
+
+                \[ x f_k'(x) = \sum_{i=1}^n i^{k+1} x^{i}) \]
+
+
+                \[ f_{k+1}(x) = \sum_{i=1}^n i^{k+1} x^{i}) \]
+
+                Because q = 1 and q = k + 1 is true, the expression listed is true
+
+            \item 
+                \[ \sum_{i=1}^n i^q \]
+
+                
+
+
+        \end{enumerate}
+
+    \item 
+        \[ S_n = \frac{u_1 (r^n - 1)}{r-1} \]
+        There are n+1 terms in this function
+        \[ S_n = \frac{1 (x^{n+1} - 1)}{x-1} \]
+
+    \item 
+        \[ f_1 (x) = xf'(x) \]
+        \[ f_1 (x) = x(\frac{x^{n+1} - 1}{x-1}) \]
+        \[ f_1(x) = x\frac{(x-1)((n+1)x^n) - (x^{n+1} - 1)}{(x-1)^2} \] 
+
+        \[ f_1(x) = \frac{nx^{n+2} - (n+1)x^{n+1} + x}{(x-1)^2} \]
+    \item
+        \begin{enumerate}
+            \item
+                \[ \lim_{x \to 1} f_1(x) = \frac{n1^{n+2} - (n+1)1^{n+1} + 1}{(1-1)^2} \]
+                \[ \lim_{x \to 1} f_1(x) = \frac{n - (n+1) + 1}{0} \]
+                \[ \lim_{x \to 1} f_1(x) = \frac{0}{0} \]
+            \item
+                \[ \lim_{x \to 1} f_1(x) = \frac{(nx^{n+2} - (n+1)x^{n+1} + x)'}{((n-1)^2)'} \]
+                \[ \lim_{x \to 1} f_1(x) = \frac{(n(n+2)x^{n+1} - (n+1)^2x^{n} + 1)'}{(2(n-1))'} \]
+                \[ \lim_{x \to 1} f_1(x) = \frac{(n(n+2)(n+1)x^{n} - n(n+1)^2x^{n-1})}{2} \]
+                \[ \lim_{x \to 1} f_1(x) = \frac{n^2 + n}{2} \]
+
+                \[ \lim_{x \to 1} f_1(x) = \frac{1}{2} n(n + 1) \]
+
+
+
+
+        \end{enumerate}
+        
+\end{enumerate}
+
+\end{document}
