@@ -19,5 +19,33 @@ relating t to x and y. For the function $x(t) = 4\cos t$ and $y(t) = 3\sin t$,
 divide both sides by 4 and 3 respectivly and plug the cosine and sin functions into 
 the Pythagoreus identity to create the equation of a circle.
 
+\subsection{Calculus on Parametric Curves}
+\subsubsection{Derivatives of Parametric Equations}
+Given a curve defined by $x = x(t)$ and $y = y(t)$, given that their derivatives 
+exist, the derivative is given by
 
+\[ \frac{y'(t)}{x'(t)} \]
+
+The second derivative is given by 
+
+\[ \frac{\frac{d}{dt}(\frac{dy}{dx})}{\frac{dx}{dt}} \]
+
+by using the quotient rule on the first derivative
+
+\subsubsection{Integrals of Parametric Equations}
+
+The area under a parametric curve is
+
+\[ \int_a^b y(t)x'(t) dt \]
+
+\subsubsection{Arc Length of a Parametric Curve}
+
+The length of a arc on a parametric curve is
+
+\[ s = \int_{t_1}^{t_2} \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \quad  dt \] 
+
+\subsubsection{Surface Area of a Parametric Curve}
+
+When a parametric curve is rotated about the x axis, the area is, 
+\[ S = 2 \pi \int_a^b f(x) \sqrt{1+(f'(x))^2} \quad dx \]
 \end{document}
